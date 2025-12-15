@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ақмарал | Қыз ұзату</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Intro Overlay (Video) -->
+  <!-- <div id="introOverlay" style="position: fixed; top:0; left:0; width:100vw; height:100vh; background: rgba(0,0,0,0.9); z-index:9999; display:flex; align-items:center; justify-content:center;">
+    <div style="background:#fff; padding:10px; border-radius:12px; max-width:90vw; max-height:95vh; text-align:center; box-shadow:0 0 20px rgba(0,0,0,0.5);">
+      <video id="introVideo" playsinline autoplay muted loop style="max-width:100%; border-radius:10px; margin-bottom:20px;">
+        <source src="video.mp4" type="video/mp4" />
+        Сіздің браузеріңіз видео көрсетуді қолдамайды.
+      </video>
+      <button onclick="hideIntro()" style="padding:15px 30px; font-size:1.2rem; background:#f5f5f5; border:2px solid #000; border-radius:8px; cursor:pointer;">
+        Шақыртуды ашу
+      </button>
+    </div>
+  </div> -->
+
+  <div class="gold-overlay"></div>
+
+  <!-- Music Player -->
+  <div class="music-player" id="musicPlayer">
+    <i class="fas fa-music"></i>
+    <audio id="weddingMusic" autoplay loop>
+      <source src="miras.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+
+  <div class="container">
+    <div class="header floating">
+      <div class="ornament-top"></div>
+      <h1 class="invite-title">Ақмарал</h1>
+      <p class="subtitle">Қыз ұзатуға арналған шақыру</p>
+    </div>
+
+    <div class="down-arrow">⌄</div>
+
+    <div class="invitation-card">
+      <h2 class="section-title">Құрметті қонақтар!</h2>
+
+      <p class="invitation-text">
+        Сіздерді Ақмарал қызымыздың ұзату тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
+      </p>
+
+      <div class="event-details">
+        <div class="detail-box">
+          <div class="detail-icon">
+            <i class="far fa-calendar-alt"></i>
+          </div>
+          <h3 class="detail-title">Күні</h3>
+          <p class="detail-content">02.01.2026</p>
+        </div>
+
+        <!-- Calendar (January 2026) -->
+        <div class="calendar-section">
+          <div class="calendar-header">Қаңтар 2026</div>
+          <table class="calendar-table">
+            <thead>
+              <tr>
+                <th>ДБ</th>
+                <th>ССБ</th>
+                <th>СРБ</th>
+                <th>ББ</th>
+                <th>ЖМ</th>
+                <th>СБ</th>
+                <th>ЖБ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td class="event-day">2</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- NOTE: 02.01.2026 is highlighted via event-day on "2" -->
+        </div>
+
+        <div class="detail-box">
+          <div class="detail-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <h3 class="detail-title">Басталуы</h3>
+          <p class="detail-content">17:00</p>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-section">
+        <h2 class="section-title">Мекен жайымыз</h2><i class="fas fa-map-marker-alt"></i>
+        <div class="map-container">
+          <div class="map-placeholder">
+            <div class="map-overlay">
+              <h3 class="map-title">"Marsel"</h3>
+              <p class="address">
+                Алматы қаласы
+              </p>
+              <a href="https://2gis.kz/almaty/geo/70000001025587069" target="_blank" class="btn">
+                <i class="fas fa-map-marked-alt"></i> Навигатор
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hosts -->
+      <div class="hosts-section">
+        <h3 class="hosts-title">Той иелері</h3>
+        <p class="hosts-names">Тойлы мен Роза</p>
+      </div>
+    </div>
+
+    <!-- RSVP -->
+    <div class="rsvp-section">
+      <h2 class="section-title">Қатысатыныңызды растауыңызды өтінеміз</h2>
+
+      <form class="rsvp-form">
+        <div class="form-group">
+          <label>Есіміңіз:</label>
+          <input type="text" name="name" placeholder="Есіміңізді жазыңыз" required />
+        </div>
+
+        <div class="form-group">
+          <label>Қатысу:</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="attending" name="attendance" value="Иә барамын" checked />
+              <label for="attending">Иә барамын</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="withSpouse" name="attendance" value="Жұбайыммен барамын" />
+              <label for="withSpouse">Жұбайыммен барамын</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="notAttending" name="attendance" value="Бара алмаймын" />
+              <label for="notAttending">Бара алмаймын</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">
+          <i class="fas fa-paper-plane"></i> Жіберу
+        </button>
+      </form>
+    </div>
+
+    <h2 class="section-title">Тойдың басталуына:</h2>
+
+    <div class="countdown">
+      <div class="countdown-item">
+        <div class="countdown-number" id="days">00</div>
+        <div class="countdown-label">Күн</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="hours">00</div>
+        <div class="countdown-label">Сағат</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="minutes">00</div>
+        <div class="countdown-label">Минут</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="seconds">00</div>
+        <div class="countdown-label">Секунд</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-divider"></div>
+      <p>Қыз ұзату тойымыздың құрметті қонағы болыңыздар!</p>
+    </footer>
+  </div>
+
+  <script>
+    // Music player
+    const musicPlayer = document.getElementById('musicPlayer');
+    const weddingMusic = document.getElementById('weddingMusic');
+    let isPlaying = false;
+
+    musicPlayer.addEventListener('click', () => {
+      if (isPlaying) {
+        weddingMusic.pause();
+        musicPlayer.innerHTML = '<i class="fas fa-music"></i>';
+      } else {
+        weddingMusic.play().catch(() => {});
+        musicPlayer.innerHTML = '<i class="fas fa-pause"></i>';
+      }
+      isPlaying = !isPlaying;
+    });
+
+    // Hide intro + start music
+    function hideIntro() {
+      document.getElementById('introOverlay').style.display = 'none';
+
+      weddingMusic.play().then(() => {
+        isPlaying = true;
+        musicPlayer.innerHTML = '<i class="fas fa-pause"></i>';
+      }).catch(() => {
+        isPlaying = false;
+        musicPlayer.innerHTML = '<i class="fas fa-music"></i>';
+      });
+    }
+
+    // Countdown timer (Қыз ұзату)
+    const eventDate = new Date("2026-01-02T17:00:00");
+
+    function updateCountdown() {
+      const now = new Date();
+      const timeDiff = eventDate - now;
+
+      if (timeDiff > 0) {
+        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = String(days).padStart(2, '0');
+        document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+        document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+        document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+      } else {
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+      }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // RSVP submit (Google Apps Script)
+    document.querySelector('.rsvp-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = this.querySelector('input[name="name"]').value;
+      const attendance = this.querySelector('input[name="attendance"]:checked').value;
+
+      const submitButton = this.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.innerHTML;
+      submitButton.innerHTML = '<div class="loader"></div> Жіберілуде...';
+      submitButton.disabled = true;
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz9KAW8Wo4vbbR5a1jrxZIcMrTta2bYvZ9ZbyafIeILk5dfZ6-Pivr58KSA-nYcIiIv/exec';
+      const url = `${scriptURL}?name=${encodeURIComponent(name)}&attendance=${encodeURIComponent(attendance)}`;
+
+      fetch(url, {
+        method: 'GET',
+        mode: 'no-cors'
+      })
+      .then(() => {
+        alert(`Рақмет, ${name}! Мәлімет: ${attendance}`);
+        this.reset();
+      })
+      .catch(() => {
+        alert('Қате орын алды. Қайта байқап көріңіз.');
+      })
+      .finally(() => {
+        submitButton.innerHTML = originalButtonText;
+        submitButton.disabled = false;
+      });
+    });
+  </script>
+</body>
+</html>
